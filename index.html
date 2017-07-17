@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bekar jibon</title>
+	<meta charset="utf-8">
+
+	<!-- Bootstrap Specific-->
+    
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<!--Jquery Specific-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/typingAnimation.js"></script>
+    <script type="text/javascript" src="js/scrollAnimation.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/hamburger-button.js"></script>
+    
+    <!--CSS files-->
+    
+    <link rel="stylesheet" type="text/css" href="css/typingAnimation.css">
+    <link rel="stylesheet" type="text/css" href="css/scrollAnimation.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger-button.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|PT+Sans:400,700|Ubuntu|Source+Code+Pro|Coming+Soon" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://use.fontawesome.com/126a15c073.js"></script>
+
+    <!-- media querries -->
+
+    <link rel="stylesheet" type="text/css" href="css/desktop-and-laptop.css">
+    <link rel="stylesheet" type="text/css" href="css/till-1344.css">
+    <link rel="stylesheet" type="text/css" href="css/till-1221.css">
+    <link rel="stylesheet" type="text/css" href="css/till-1094.css">
+    <link rel="stylesheet" type="text/css" href="css/till-1173.css">
+    <link rel="stylesheet" type="text/css" href="css/till-1156.css">
+    <link rel="stylesheet" type="text/css" href="css/till-991.css">
+    <link rel="stylesheet" type="text/css" href="css/till-799.css">
+    <link rel="stylesheet" type="text/css" href="css/till-767.css">
+    <link rel="stylesheet" type="text/css" href="css/till-635.css">
+    <link rel="stylesheet" type="text/css" href="css/till-538.css">
+    <link rel="stylesheet" type="text/css" href="css/till-510.css">
+    <link rel="stylesheet" type="text/css" href="css/till-414.css">
+
+    <!-- D3 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+	<script src="d3/d3pie.js"></script>
+
+    
+</head>
+<body>
+
+	<div class="container-fluid" id="lol">
+
+		<div class="row" id="masthead">
+			<div class="col-md-12 col-sm-12">
+				
+				<button id="hamburger-button">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				
+				<a href="#contact" class="pages">
+					<span id="tab_contact">CONTACT</span>
+				</a>
+
+				<a href="#portfolio" class="pages">
+					<span id="tab_portfolio">PROJECTS</span>
+				</a>
+
+				<a href="#skills" class="pages">
+					<span id="tab_skills">SKILLS</span>
+				</a>
+
+				<a href="#timeline" class="pages">
+					<span id="tab_timeline">TIMELINE</span>
+				</a>
+
+				<a href="#about" class="pages">
+					<span id="tab_about">ABOUT</span>
+				</a>
+
+				<a href="#jumbo" class="pages">
+					<span id="tab_home">HOME</span>
+				</a>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="jumbotron" id="jumbo">
+			<div id="ugly-hack">
+				<!-- This ugly hack necessary to maintain gap between masthead and the animated letters. normal css properties of margin and padding doesnot work here dont know why. -->
+			</div>
+
+			<p id="introNote1"></p> <br><br><br>
+			<p id="introNote2"></p> <br>
+			<p id="introNote3"></p> 
+			<p id="introNote4"></p> <br>
+			<i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
+		</div>
+		
+		<!--****************************************************-->
+
+		<div class="row" id="about">
+
+			<div class="col-md-5 col-sm-5 col-xs-12" id="graffiti">
+
+				<!-- first row -->
+				<div class="row" id="graffiti-row-1">
+					<div class="col-md-8 col-sm-8 col-xs-8" id="creative">
+						Creative 
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-4" id="algorithmist">
+						algorithmic <span>programmer</span>
+					</div>
+				</div>
+
+				<!-- second row -->
+				<div class="row" id="graffiti-row-2">
+					<div class="col-md-6 col-sm-6 col-xs-6" id="geek-n-gta">
+						<div id="geek">Geek</div>
+						<div id="gta">Grand Theft Auto maniac</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-3" id="foodie">
+						<p>foodie</p>
+					</div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-3" id="full-stack-dev">
+						Full stack developer in making
+					</div>
+
+					<div class="col-md-3 col-sm-3 col-xs-3" id="temp">
+						
+					</div>
+					
+				</div>
+
+
+				<!-- third row -->
+				<div class="row" id="graffiti-row-3">
+
+					<div class="col-md-5 col-sm-5 col-xs-5" id="front-end-dev">
+						Front-end Engineer
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-5" id="inquisitive-n-python">
+						<div>Inquisitive</div>
+						<div>Python Enthusiast</div>
+					</div>
+					
+					<div class="col-md-2 col-sm-2 col-xs-2" id="introvert">
+						<p>Introvert</p>
+					</div>
+					
+				</div>
+
+
+				<!-- fourth row -->
+				<div class="row" id="graffiti-row-4">
+					<div class="col-md-12 col-sm-12 col-xs-12" id="ml">
+						<span>Wannabe</span> 
+						Machine Learning
+						<span>Engineer</span> 
+					</div>
+					
+				</div>
+
+			</div>
+
+			<div class="col-md-7 col-sm-7 col-xs-12" id="about-me-section">
+				<div id="about-me-text">
+					<div id="my-pic"></div>
+					
+					<p>
+						I'm a Computer Science graduate with a knack for working on real life challenges which would positively impact humanity and kindle a sense of purpose within me.
+					</p>
+
+					<p>
+						As a front-end developer I take my time to deliver neat, non-redundant designs with a strong focus on aesthetics. At the same time, I work on upgrading myself with modern frameworks which would improve the overall user experience. 
+					</p>
+					<p>
+						I have innate curiosity in areas related to machine learning such as pattern recognition, speech recognition, image processing et cetera. I desire to learn them out of my own interest, at my own pace as it would require significant fraction of my time.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--****************************************************-->
+
+		<div class="row" id="timeline">
+			<div class="col-md-7 col-sm-12 col-xs-12">
+				
+				<div class="timeline-line"></div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								event-div">
+						
+						<div class="event-enclosure event-enclosure-left">
+							
+							<div 	class="icon-div" 
+									style="background-color: #FF5733; border: 0.1em solid black">
+
+								<i class="ion-egg" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Born in July 1993</h4>
+								<p>
+									.....and it started!
+								</p>
+							</div>
+
+							<div class="square square-left"></div>
+							<div class="circular-dot circular-dot-left"></div>
+
+						</div>
+
+					</div>
+				</div>
+								
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								col-md-offset-6 
+								col-sm-offset-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-right">
+							
+							<div 	class="icon-div" 
+									style="background-color: #9b59b6; border: 0.1em solid black">
+
+								<i class="ion-ribbon-b" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Class X (ICSE 2010)</h4>
+								<p>
+									Secured 87%.
+								</p>
+							</div>
+
+							<div class="square square-right"></div>
+							<div class="circular-dot circular-dot-right"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-left">
+							
+							<div 	class="icon-div" 
+									style="background-color: #95C324; border: 0.1em solid black">
+
+								<i class="ion-trophy" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Class XII (ISC 2012)</h4>
+								<p>
+									Secured 93%.
+								</p>
+							</div>
+
+							<div class="square square-left"></div>
+							<div class="circular-dot circular-dot-left"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								col-md-offset-6 
+								col-sm-offset-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-right">
+							
+							<div 	class="icon-div" 
+									style="background-color: #FFAA22; border: 0.1em solid black">
+
+								<i class="ion-ribbon-a"></i>
+							</div>
+							<div class="event-description">
+								<h4>ACM ICPC 2013</h4>
+								<p>
+									Contested in the International Collegiate Programming Contest 2014, along with my team mates Rishi Mukherjee and Abhay Mangal.
+								</p>
+							</div>
+
+							<div class="square square-right"></div>
+							<div class="circular-dot circular-dot-right"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-left">
+							
+							<div 	class="icon-div" 
+									style="background-color: #DA50BF; border: 0.1em solid black">
+
+								<i class="ion-trophy" ></i>
+							</div>
+							<div class="event-description">
+								<h4>ACM ICPC 2014</h4>
+								<p>
+									Contested in the International Collegiate Programming Contest 2014, along with my team mates Abhay Mangal and Ayan Some.
+								</p>
+							</div>
+
+							<div class="square square-left"></div>
+							<div class="circular-dot circular-dot-left"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								col-md-offset-6 
+								col-sm-offset-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-right">
+							
+							<div 	class="icon-div" 
+									style="background-color: #3498DB; border: 0.1em solid black">
+
+								<i class="ion-trophy" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Infosys Aspirations 2020</h4>
+								<p>
+									Stood 1st in Aspirations 2020, a programming contest organized by Infosys with my team mates Abhay Mangal and Ayan Some.
+								</p>
+							</div>
+
+							<div class="square square-right"></div>
+							<div class="circular-dot circular-dot-right"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-left">
+							
+							<div 	class="icon-div" 
+									style="background-color: #5CB677; border: 0.1em solid black">
+
+								<i class="ion-briefcase" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Internship @ pricebaba</h4>
+								<p>
+									Interned as an Android developer, worked on Material Design and Google maps.
+								</p>
+							</div>
+
+							<div class="square square-left"></div>
+							<div class="circular-dot circular-dot-left"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								col-md-offset-6 
+								col-sm-offset-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-right">
+							
+							<div 	class="icon-div" 
+									style="background-color: #B65C8A; border: 0.1em solid black">
+
+								<i class="ion-briefcase" ></i>
+							</div>
+							<div class="event-description">
+								<h4>Graduate in 2016</h4>
+								<p>
+									Became a Computer Science Major. Finally!
+								</p>
+							</div>
+
+							<div class="square square-right"></div>
+							<div class="circular-dot circular-dot-right"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row row-containing-event">
+					<div class="col-md-6 
+								col-sm-6 
+								event-div">
+
+						<div class="event-enclosure event-enclosure-left">
+							
+							<div 	class="icon-div" 
+									style="background-color: #5C6DB6; border: 0.1em solid black">
+
+								<i class="ion-briefcase" ></i>
+							</div>
+							<div class="event-description">
+								<h4>First Job</h4>
+								<p>
+									Maybe you can fill this place :)
+								</p>
+							</div>
+
+							<div class="square square-left"></div>
+							<div class="circular-dot circular-dot-left"></div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-md-5 col-sm-5" id="timeline-message">
+				<div id="you">YOU</div>
+				<div id="can">CAN</div>
+				<div id="be-a">BE A</div>
+				<div id="milestone">MILESTONE</div>
+				<div id="in-my">IN MY</div>
+				<div id="journey">JOURNEY</div>
+			</div>
+
+		</div>
+
+		<!--******************************************************-->
+
+		<div class="row" id="skills">
+
+			<div class="col-md-6 col-sm-6 col-xs-12 piechart-container">
+				<center>
+					<div class="pieChart" id="pieChart1"></div>
+				</center>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12 piechart-container">
+				<center>
+					<div class="pieChart" id="pieChart2"></div>
+				</center>
+			</div>
+
+			<div class="col-md-12 col-sm-12 col-xs-12" id="lower_panel">
+				<!--Work left-->
+				<div id="the-actual-panel">
+					<div id="cp">../competitive programming</div>
+
+					<div id="button-box">
+						<a href="https://www.codechef.com/users/codegagu" target="z">
+							<button>
+								Codechef
+							</button>
+						</a>
+
+						<a href="https://www.spoj.com/users/codegagu" target="y">
+							<button>
+								SPOJ
+							</button>
+						</a>
+
+						
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			<script type="text/javascript" src="d3/script1.js"></script>
+			
+		</div>
+
+		<!--******************************************************-->
+
+		<div class="row" id="portfolio">
+			<div class="col-md-12 col-sm-12 col-xs-12"><!-- main column -->
+
+				<div class="row" id="project-container">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+								<div class="card-image">
+
+									<div class="front-face" id="front-face-1"></div>
+
+									<div class="back-face" id="back-face-1">
+										<div class="icon-holder">
+											<a href="https://www.quora.com/What-is-your-favorite-coding-project-you-have-done/answer/Swagnik-Dutta-2" target="a">
+												<i class="fa fa-quora" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="icon-holder">
+											<a href="https://github.com/swagnikdutta/SPOJ-Crawler-using-Scrapy" target="b">
+												<i class="fa fa-github" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="flash-card-description" >
+									<div id="title-heading">Web Crawler using Scrapy Python</div>
+									<div id="project_elaborate">
+										A Python script that scrapes a page and downloads data in bulk. 
+									</div>
+								</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+
+					<!-- next -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+									<div class="card-image">
+										<div class="front-face" id="front-face-2"></div>
+
+										<div class="back-face" id="back-face-2">
+											<div class="icon-holder icon-holder2">
+												<a href="http://www.google.com" target="c">
+													<i class="fa fa-github" aria-hidden="true"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="flash-card-description" >
+										<div id="title-heading">Portfolio</div>
+										
+										<div id="project_elaborate">
+											Single page responsive portfolio.
+										</div>
+									</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+
+					<!-- next -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+								<div class="card-image">
+									<div class="front-face" id="front-face-3"></div>
+
+									<div class="back-face" id="back-face-3">
+										<div class="icon-holder">
+											<a href="https://www.youtube.com/watch?v=4Aquy6qmT9g" target="d">
+												<i class="fa fa-youtube-play" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="icon-holder">
+											<a href="https://github.com/swagnikdutta/Bouncing-balls-elastic-collision" target="e">
+												<i class="fa fa-github" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="flash-card-description" >
+									<div id="title-heading">Elastic Collision Animation</div>
+									<div id="project_elaborate">
+										An animation effect of elastic collision of balls in random motion. 
+									</div>
+								</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+
+					<!-- next -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+								<div class="card-image">
+									<div class="front-face" id="front-face-4">Coming soon</div>
+									<div class="back-face" id="back-face-4">
+										Great things take time
+									</div>
+								</div>
+								
+								<div class="flash-card-description" >
+									<div id="title-heading">Placeholder</div>
+									<div id="project_elaborate">
+										Sample project description
+									</div>
+								</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+
+					<!-- next -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+								<div class="card-image">
+									<div class="front-face" id="front-face-5">Coming soon</div>
+									<div class="back-face" id="back-face-5">
+										Rome was not built in a day
+									</div>
+								</div>
+								
+								<div class="flash-card-description" >
+									<div id="title-heading">Placeholder</div>
+									<div id="project_elaborate">
+										Sample project description
+									</div>
+								</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+
+					<!-- next -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<!-- // -->
+						
+
+							<div class="flash-card">
+								<div class="card-image">
+									<div class="front-face" id="front-face-6">Coming soon</div>
+									<div class="back-face" id="back-face-6">
+										Patience bro, patience!
+									</div>
+								</div>
+								
+								<div class="flash-card-description" >
+									<div id="title-heading">Placeholder</div>
+									<div id="project_elaborate">
+										Sample project description
+									</div>
+								</div>
+							</div>
+						
+						<!-- // -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--******************************************************-->
+
+<!-- 		<div class="row" id="portfolio-for-small">		
+
+		</div> -->
+
+		<!--******************************************************-->
+
+		<div class="row" id="contact">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<ul>
+					<li>						
+						<p>
+							mail me at, <br> swagnikd @ gmail.com
+						</p>
+					</li>
+					<li>
+						<p>
+							Oh, I got a better idea! <br>
+							+91 9874 281 676 <br>
+							Call me? :D
+						</p>
+					</li>
+					<li>
+						<p>
+							Hire me? :P <br>
+						</p>
+						<p>
+							<a href="https://www.linkedin.com/in/swagnikdutta/" target="l">
+								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							</a>
+							<a href="https://github.com/swagnikdutta" target="m">
+								<i class="fa fa-github-square" aria-hidden="true"></i>
+							</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<p id="for-now">
+					Can't <br>
+					resist <br>
+					to know <br>
+					more?
+				</p>
+				<p id="old-school">
+					Go old school
+				</p>
+				
+				<button id="view-resume" onclick="window.open('https://drive.google.com/open?id=0B1zIpaMTwAuDLUhJTzJlYi11d1U') ">
+					Download resume
+				</button>
+			</div>
+		</div>
+
+	</div> <!-- Container div -->
+
+
+
+</body>
+</html>
