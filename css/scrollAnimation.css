@@ -1,0 +1,42 @@
+.pages span.scrolled{
+	font-size: 1.9em;
+	top: 22%;
+	transition: font-size 200ms linear;
+}
+
+#masthead.scrolled{
+	background-color: rgba(42, 42, 42, 1) !important;
+	height: 8.5vh;
+	transition: background-color 200ms linear, height 200ms linear;
+}
+
+/***************************************/
+
+#tab_about.highlight {
+	color: #00F7FF;
+}
+
+/**************************************/
+
+#tab_timeline.highlight {
+	color: #00F7FF;
+}
+
+/**************************************/
+
+#tab_skills.highlight {
+	color: #00F7FF;
+}
+
+/**************************************/
+
+#tab_portfolio.highlight {
+	color: #00F7FF;
+}
+
+/**************************************/
+
+#tab_contact.highlight {
+	color: #00F7FF;
+}
+
