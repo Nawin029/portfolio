@@ -37,7 +37,7 @@ $(function(){
 	function next3(){
 		
     	$("#introNote4").typed({
-			strings: ["Building beautiful responsive websites with strong focus on asthetics ^1200", "learning about Python and its awesome libraries ^1200", "automating mundane tasks by writing code ^1200"],
+			strings: ["Building beautiful responsive websites with strong focus on aesthetics ^1200", "learning about Python and its awesome libraries ^1200", "automating mundane tasks by writing code ^1200"],
 			typeSpeed: 10,
 			backSpeed: 0,
 			loop: true,
